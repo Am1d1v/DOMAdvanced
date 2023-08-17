@@ -17,7 +17,8 @@ const body = document.querySelector('body');
 const message = document.createElement('div');
 message.classList.add('message');
 message.textContent = 'Message Text';
-mainWrapper.append(message);
+mainWrapper.prepend(message);
+mainWrapper.append(message.cloneNode(true));
 
 
 
