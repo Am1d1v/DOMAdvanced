@@ -14,13 +14,15 @@ const body = document.querySelector('body');
 //const buttons = document.getElementsByTagName('button');
 //console.log(buttons);
 
-const message = document.createElement('div');
+const message = document.createElement('button');
 message.classList.add('message');
 message.textContent = 'Message Text';
 mainWrapper.prepend(message);
 mainWrapper.append(message.cloneNode(true));
 
-
+document.querySelector('.message').addEventListener('click', () => {
+    message.remove();
+});
 
 
 
