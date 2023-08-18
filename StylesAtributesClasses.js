@@ -11,6 +11,7 @@ mainWrapper.style.borderRadius = '15px';
 newWrapper.style.height = '300px';
 console.log((mainWrapper.classList)[0]);
 console.log(newWrapper.dataset.versionNumber);
+console.log(newWrapper.classList.contains('newWrapper'));
 
 
 console.log(getComputedStyle(mainWrapper).height);
