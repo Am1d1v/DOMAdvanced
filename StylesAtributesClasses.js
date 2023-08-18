@@ -1,5 +1,7 @@
 
 
+/*
+
 const mainWrapper = document.querySelector('.mainWrapper');
 const newWrapper = document.querySelector('.newWrapper');
 
@@ -19,6 +21,8 @@ console.log(typeof(getComputedStyle(mainWrapper).height));
 mainWrapper.style.height = Number.parseFloat(getComputedStyle(mainWrapper).height) + 150 + 'px';
 
 
+
+*/
 
 
 

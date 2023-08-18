@@ -5,6 +5,8 @@
 //console.log(document.body);
 //console.log(document.querySelectorAll('.wrapper'));
 
+/*
+
 const sections = document.querySelectorAll('.wrapper');
 const mainWrapper = document.querySelector('.mainWrapper');
 const body = document.querySelector('body');
@@ -24,6 +26,7 @@ document.querySelector('.message').addEventListener('click', () => {
     message.remove();
 });
 
+*/
 
 
 

@@ -1,4 +1,5 @@
 .mainWrapper {
+  background-color: #6890ac;
   display: flex;
   width: 500px;
   height: 200px;
@@ -7,6 +8,11 @@
 
 .newWrapper {
   height: 200px;
+}
+
+.invisibleBlock {
+  background-color: white;
+  height: 200vh;
 }
 
 button {
