@@ -11,8 +11,11 @@
 }
 
 .invisibleBlock {
-  background-color: white;
+  display: flex;
+  background-color: #d3c4df;
   height: 200vh;
+  justify-content: center;
+  align-items: center;
 }
 
 button {
