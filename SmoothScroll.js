@@ -10,11 +10,15 @@ const btnThree = document.querySelector('#btnThree');
 btnOne.addEventListener('click',(e) => {
    const sectionOneCoords = sectionOne.getBoundingClientRect();
     console.log(sectionOneCoords.y);
+    /*
     window.scrollTo({
         left: sectionOneCoords.left,
         top: sectionOneCoords.top,
         behavior: 'smooth'
     });
+    */
+
+    sectionOne.scrollIntoView({behavior: 'smooth'});
 });
 
 /*
