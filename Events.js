@@ -18,7 +18,6 @@ function getRandomInt(min, max){
     return Math.round(Math.random() * (max - min) + min);
 }
 
-
 const getRandomColor = () => `rgb(${getRandomInt(0, 255)}, ${getRandomInt(0, 255)}, ${getRandomInt(0, 255)})`;
 
 // Random color for clicked Button One
@@ -26,12 +25,20 @@ const getRandomColor = () => `rgb(${getRandomInt(0, 255)}, ${getRandomInt(0, 255
 btnOne.addEventListener('click',function(e){
     this.style.backgroundColor = getRandomColor();
     e.stopPropagation();
+    console.log(e.target);
+    console.log(e.currentTarget);
+    console.log(e.currentTarget === this);
     //console.log(this);
 });
 
 wrapper.addEventListener('click', function(){
-    this.style.backgroundColor = getRandomColor();
+    wrapper.style.backgroundColor = getRandomColor();
 })
 
-
-
+/*
+const intervalColorChanger = function(){
+    randomColor = `rgb(${getRandomInt(0, 255)}, ${getRandomInt(0, 255)}, ${getRandomInt(0, 255)})`;
+    wrapper.style.backgroundColor = randomColor;
+}
+setInterval(intervalColorChanger, 1000);
+*/
