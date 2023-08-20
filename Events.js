@@ -3,6 +3,7 @@
 const btnOne = document.querySelector('#btnOne');
 const btnTwo = document.querySelector('#btnTwo');
 const btnThree = document.querySelector('#btnThree');
+const wrapper = document.querySelector('.mainWrapper');
 
 
 /*
@@ -22,11 +23,15 @@ const getRandomColor = () => `rgb(${getRandomInt(0, 255)}, ${getRandomInt(0, 255
 
 // Random color for clicked Button One
 
-btnOne.addEventListener('click',(e) => {
-    btnOne.style.backgroundColor = getRandomColor();
+btnOne.addEventListener('click',function(e){
+    this.style.backgroundColor = getRandomColor();
+    e.stopPropagation();
+    //console.log(this);
 });
 
-
+wrapper.addEventListener('click', function(){
+    this.style.backgroundColor = getRandomColor();
+})
 
 
 
