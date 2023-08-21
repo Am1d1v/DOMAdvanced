@@ -1,3 +1,7 @@
+body {
+  background-color: #352c5a;
+}
+
 .mainWrapper {
   background-color: #6890ac;
   display: flex;
@@ -18,9 +22,19 @@
   align-items: center;
 }
 
+.wrapperText {
+  font-weight: 500;
+  margin: 10px;
+}
+
+.btns {
+  margin: auto;
+}
+
 button {
   background-color: #fff;
   width: 100px;
   height: 50px;
   margin: auto;
+  margin-top: 5px;
 }/*# sourceMappingURL=style.css.map */

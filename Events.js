@@ -12,6 +12,7 @@ btn.onclick = () => {
 }
 */
 
+/*
 function getRandomInt(min, max){
     min = Math.floor(min);
     max = Math.floor(max);
@@ -34,6 +35,7 @@ btnOne.addEventListener('click',function(e){
 wrapper.addEventListener('click', function(){
     wrapper.style.backgroundColor = getRandomColor();
 })
+*/
 
 /*
 const intervalColorChanger = function(){
@@ -42,3 +44,17 @@ const intervalColorChanger = function(){
 }
 setInterval(intervalColorChanger, 1000);
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
