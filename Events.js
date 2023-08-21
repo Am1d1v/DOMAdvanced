@@ -92,4 +92,7 @@ window.addEventListener('load', () => {
     alert('Loaded');
 })
 
-
+window.addEventListener('beforeunload', (e) => {
+    e.preventDefault();
+    e.returnValue = '';
+})
