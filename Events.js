@@ -7,6 +7,11 @@ const wrapper = document.querySelector('.mainWrapper');
 const textWrapper1 = document.querySelector('.wrapperText1')
 const textWrapper2 = document.querySelector('.wrapperText2')
 const textWrapper3 = document.querySelector('.wrapperText3')
+const navigation = document.querySelector('.navigation');
+const cancelFixed = document.querySelector('#cancelFixed');
+
+
+
 
 /*
 btn.onclick = () => {
@@ -65,7 +70,17 @@ btnThree.addEventListener('click', () => {
     textWrapper3.classList.remove('hidden');
 });
 
+window.addEventListener('scroll', function(e){
+    console.log(window.pageYOffset);
+    if (window.pageYOffset > 100){
+        navigation.classList.add('fixed');
+    }
 
+    if (window.pageYOffset < 50){
+        navigation.classList.remove('fixed');
+    }
+
+});
 
 
 
