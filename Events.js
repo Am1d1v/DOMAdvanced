@@ -4,7 +4,9 @@ const btnOne = document.querySelector('#btnOne');
 const btnTwo = document.querySelector('#btnTwo');
 const btnThree = document.querySelector('#btnThree');
 const wrapper = document.querySelector('.mainWrapper');
-
+const textWrapper1 = document.querySelector('.wrapperText1')
+const textWrapper2 = document.querySelector('.wrapperText2')
+const textWrapper3 = document.querySelector('.wrapperText3')
 
 /*
 btn.onclick = () => {
@@ -45,11 +47,23 @@ const intervalColorChanger = function(){
 setInterval(intervalColorChanger, 1000);
 */
 
+btnOne.addEventListener('click', () => {
+    textWrapper1.classList.remove('hidden');
+    textWrapper2.classList.add('hidden');
+    textWrapper3.classList.add('hidden');
+});
 
+btnTwo.addEventListener('click', () => {
+    textWrapper1.classList.add('hidden');
+    textWrapper2.classList.remove('hidden');
+    textWrapper3.classList.add('hidden');
+});
 
-
-
-
+btnThree.addEventListener('click', () => {
+    textWrapper1.classList.add('hidden');
+    textWrapper2.classList.add('hidden');
+    textWrapper3.classList.remove('hidden');
+});
 
 
 

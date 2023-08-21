@@ -22,13 +22,17 @@ body {
   align-items: center;
 }
 
-.wrapperText {
+.wrapperText1, .wrapperText2, .wrapperText3 {
   font-weight: 500;
-  margin: 10px;
+  margin: auto;
 }
 
 .btns {
   margin: auto;
+}
+
+.hidden {
+  display: none;
 }
 
 button {
