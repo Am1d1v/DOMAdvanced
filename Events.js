@@ -82,10 +82,14 @@ window.addEventListener('scroll', function(e){
 
 });
 
+/*
 document.addEventListener('DOMContentLoaded', (e) => {
     alert('Content Loaded');
 })
+*/
 
-
+window.addEventListener('load', () => {
+    alert('Loaded');
+})
 
 
