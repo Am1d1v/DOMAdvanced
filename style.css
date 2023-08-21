@@ -3,6 +3,10 @@ body {
   height: 200vh;
 }
 
+nav {
+  height: 30px;
+}
+
 .navigation {
   display: flex;
   background-color: rgba(146, 80, 146, 0.9);

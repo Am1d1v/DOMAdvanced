@@ -72,7 +72,7 @@ btnThree.addEventListener('click', () => {
 
 window.addEventListener('scroll', function(e){
     console.log(window.pageYOffset);
-    if (window.pageYOffset > 100){
+    if (window.pageYOffset > 0){
         navigation.classList.add('fixed');
     }
 
